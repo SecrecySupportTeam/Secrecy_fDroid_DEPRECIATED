@@ -38,7 +38,6 @@ import android.widget.TextView;
 
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.extras.abc.MaterialMenuIconCompat;
-import com.crashlytics.android.Crashlytics;
 import com.doplgangr.secrecy.Config;
 import com.doplgangr.secrecy.CustomApp;
 import com.doplgangr.secrecy.FileSystem.storage;
@@ -83,7 +82,6 @@ public class MainActivity
 
     @AfterViews
     public void onCreate() {
-        Crashlytics.start(this);
         storage.deleteTemp();                                           //Start clean
         fragmentManager = getSupportFragmentManager();
         switchFragment(0);

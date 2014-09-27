@@ -4,7 +4,6 @@ apply plugin: 'android-apt'
 
 repositories {
     mavenCentral()
-    maven { url 'http://download.crashlytics.com/maven' }
 }
 apt {
     arguments {
@@ -49,7 +48,6 @@ dependencies {
     compile project(':aFileChooser')
     compile project(':Preferencefragment')
     compile project(':payme')
-    compile 'com.crashlytics.android:crashlytics:1.+'
 }
 
 android {

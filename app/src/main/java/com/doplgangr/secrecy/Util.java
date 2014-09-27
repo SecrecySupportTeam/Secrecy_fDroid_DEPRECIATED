@@ -31,8 +31,6 @@ import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.crashlytics.android.Crashlytics;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -85,7 +83,6 @@ public class Util {
         for (Object object : objects)
             log += " " + object;
         Log.d("SecrecyLogs", log);
-        Crashlytics.log(log);
     }
 
     public static Map<String, java.io.File> getAllStorageLocations() {
